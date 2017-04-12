@@ -56,7 +56,8 @@ p {
 }
 
 .text-faded {
-    color: fade(white, 70%);
+    font-weight: 400;
+    color: fade(black, 60%);
 }
 
 section {
@@ -298,6 +299,17 @@ header {
 .call-to-action {
     h2 {
         margin: 0 auto 20px;
+    }
+    a:link {
+        text-decoration: none;
+        &:hover {
+            text-decoration:none;
+        }
+    }
+    .fa {
+        margin-left: 6px;
+        margin-right: 6px;
+        color: white;
     }
 }
 
