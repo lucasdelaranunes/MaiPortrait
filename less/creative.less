@@ -80,6 +80,7 @@ aside {
     .sans-serif-font;
     .transition-all;
     .navbar-header .navbar-brand {
+        font-family: 'Poiret One', cursive !important;
         color: @theme-primary;
         .sans-serif-font;
         font-weight: 700;
@@ -176,19 +177,19 @@ header {
         width: 100%;
         .header-content-inner {
             h1 {
+                font-family: 'Poiret One', cursive;
                 font-weight: 700;
-                text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
-                font-size: 30px;
+                font-size: 80px !important;
             }
             hr {
                 margin: 30px auto;
             }
             p {
-                font-weight: 300;
-                color: fade(white, 70%);
-                font-size: 16px;
+                font-weight: 400;
+                color: fade(white, 95%);
+                font-size: 22px !important;
                 margin-bottom: 50px;
             }
         }
@@ -217,6 +218,17 @@ header {
                 }
             }
         }
+    }
+}
+
+// Team Section
+
+.team-member {
+    text-align: center;
+    margin-bottom: 10px;
+    img {
+        margin: 0 auto;
+        border: 2px solid white;
     }
 }
 
