@@ -224,11 +224,89 @@ header {
 // Team Section
 
 .team-member {
-    text-align: center;
-    margin-bottom: 10px;
+
+    width:225px;
+    height:225px;
+    position:relative;
+    border-radius:50%;
+    box-shadow:0px 0px 0px 7px rgba(241,241,241,0.80);
+    margin-bottom: 3%;
     img {
+        display: block;
         margin: 0 auto;
         border: 2px solid white;
+    }
+    ul {
+        display: block;
+        opacity: 0;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        margin-top: -14px;
+        z-index: 15;
+        transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out;
+        -webkit-transition: all 0.6s ease-in-out;
+        li {
+            display: inline;
+            margin: 0 11px;
+            a {
+                font-family: 'FontAwesome';
+                display: inline-block;
+                font-size: 28px;
+                color: #fff;
+                transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                &:hover {
+                    text-decoration: none;
+                }
+                &:focus {
+                    text-decoration: none;
+                }
+            }
+            a.fa-facebook {
+                &:hover {
+                    color: #3b5998;
+                }
+            }
+            a.fa-twitter {
+                &:hover {
+                    color: #55acee;
+                }
+            }
+            a.fa-instagram {
+                &:hover {
+                    color: #bc2a8d;
+                }
+            }
+        }
+    }
+    &:hover {
+        ul {
+            display: block;
+            opacity: 1;
+        }
+    }
+}
+
+.team-member-shadow {
+    transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -webkit-transition:all 0.3s ease-in-out;
+    border-radius:50%;
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:10;
+    border-radius:50%;
+    .team-member:hover & {
+        box-shadow:inset  0px 0px 0px 148px rgba(17,17,17,0.80);
     }
 }
 
