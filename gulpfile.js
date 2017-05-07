@@ -3,6 +3,7 @@ var concat = require('gulp-concat');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var cleanCSS = require('gulp-clean-css');
+var htmlmin = require('gulp-htmlmin');
 
 //script paths in the desired order
 var jsFiles = [
@@ -27,6 +28,9 @@ var cssFiles = [
 			  ],    
     cssDest = 'assets/styles/css/concat';
 
+var	htmlFile = 'index.html',
+	htmlDest = 'index.min.html';
+
 gulp.task('scripts', function() {  
     return gulp.src(jsFiles)
         .pipe(concat('scripts.js'))
@@ -46,4 +50,15 @@ gulp.task('styles', function() {
         .pipe(gulp.dest(cssDest));
 });
 
-gulp.task('default', ['scripts', 'styles']);
+gulp.task('htmlmin', function() {
+  return gulp.src(htmlFile)
+    .pipe(htmlmin({collapseWhitespace: true, 
+    	removeComments: true, 
+    	removeScriptTypeAttributes: true, 
+    	removeStyleLinkTypeAttributes: true
+    }))
+    .pipe(rename('index.min.html'))
+    .pipe(gulp.dest('.'));
+});
+
+gulp.task('default', ['scripts', 'styles', 'html']);
