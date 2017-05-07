@@ -1,29 +1,22 @@
 {
-  "name": "creative",
-  "title": "Creative",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/creative",
-  "author": "Start Bootstrap",
+  "name": "maiportrait",
+  "title": "MaiPortrait",
+  "version": "1.0.0",
+  "homepage": "http://maiportrait.com.br",
+  "author": "Eric Ribeiro",
   "license": {
     "type": "MIT",
     "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
   },
   "devDependencies": {
-    "bootstrap": "^3.3.7",
-    "browser-sync": "^2.13.0",
-    "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.10",
-    "gulp-header": "^1.8.7",
-    "gulp-less": "^3.1.0",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.5.4",
-    "jquery": "^1.11.3",
-    "magnific-popup": "^1.1.0",
-    "scrollreveal": "^3.1.4"
+    "gulp-uglify": "^2.1.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
+    "url": "https://github.com/EricRibeiro/MaiPortrait.git"
   }
 }
